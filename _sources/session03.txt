@@ -14,6 +14,21 @@ Review of Previous Session
 * Booleans
 * Modules
 
+Corrections
+---------------
+
+* line breaks don't end a block
+* squirrel party example
+* unicode hello world
+* stepping through code
+* linter
+
+Course Logistics
+---------------
+
+* Attendance, grades, and homework due dates on Canvas
+* Course Notes
+* Use of Slack
 
 Homework Review
 ---------------

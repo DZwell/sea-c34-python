@@ -5,7 +5,26 @@ Shell Customizations for Python Development
 The command line is your home as a developer.  You must be comfortable there.
 In order to improve your comfort there are a number of enhancements you can
 make to improve your experience, especially with non-standard software like
-``git`` and ``virtualenv``
+``git`` and ``virtualenv``.
+The enhancements below are required to solve
+`Homework Task 1 (Setting up a Great Desktop Environment) <./homework/task_1.rst>`_ except
+for ``virtualenv`` which is optional.
+
+Shells: Bash and Fish
+==========================
+For this class, we will
+allow the use of two shell programs: ``bash`` and ``fish``.
+``Bash``, or the "Bourne Again SHell", is a mature and popular
+shell that is the default on Mac OS X, Linux, and many other
+operating systems. All the screenshots and code examples shown
+in the lectures slides are for ``bash``.
+
+``fish`` is a newer shell which enables automatic auto-completion
+as you type, abbreviated path names, and colorful syntax highlighting.
+Those of you who took the Unix & Git for Everyone Workshop with Ryan
+Sobol installed fish by default. You can continue using fish in
+this class, but you will need to follow different customization
+instructions below.
 
 What was that name, again?
 ==========================

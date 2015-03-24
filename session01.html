@@ -25,7 +25,7 @@
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="top" title="Code Fellows F2 Python, March-April 2015" href="index.html" />
     <link rel="next" title="Session Two: Functions, Booleans and Modules" href="session02.html" />
-    <link rel="prev" title="In This Course" href="index.html" />
+    <link rel="prev" title="Syllabus" href="syllabus.html" />
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Neuton&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Nobile:regular,italic,bold,bolditalic&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
 <!--[if lte IE 6]>
@@ -53,7 +53,7 @@
           <a href="session02.html" title="Session Two: Functions, Booleans and Modules"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="index.html" title="In This Course"
+          <a href="syllabus.html" title="Syllabus"
              accesskey="P">previous</a> |</li>
         <li><a href="index.html">F2 Python</a> &raquo;</li> 
       </ul>
@@ -1370,100 +1370,10 @@ to the program.</p>
 </div>
 <div class="section" id="id2">
 <h2>Homework<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p class="center large">Three Tasks by Wednesday</p>
-<div class="section" id="task-1">
-<h3>Task 1<a class="headerlink" href="#task-1" title="Permalink to this headline">¶</a></h3>
-<p><strong>Set Up a Great Dev Environment</strong></p>
-<p>Make sure you have the basics of command line usage down:</p>
-<p>Work through the supplemental tutorials on setting up your
-<a class="reference external" href="supplements/shell.html">Command Line</a> for good development support.</p>
-<p>In particular, ensure that you have command-line support for git.</p>
-<p>Then, make sure you&#8217;ve got your editor set up productively &#8211; at the very very
-least, make sure it does Python indentation well.</p>
-<p><strong>Advanced Editor Setup:</strong></p>
-<p>If you are using SublimeText, <a class="reference external" href="supplements/sublime_as_ide.html">here are some notes</a> to make it super-nifty.</p>
-<p>At the end, your editor should support tab completion and pep8 and pyflakes
-linting.</p>
-<p>If you are not using SublimeText, look for plugins that accomplish the same
-goals for your own editor.</p>
-<p>If none are available, please consider a change of editor.</p>
-</div>
-<div class="section" id="task-2">
-<h3>Task 2<a class="headerlink" href="#task-2" title="Permalink to this headline">¶</a></h3>
-<p><strong>Tell Us About Yourself</strong></p>
-<p>This is a way for you to learn a bit about gitHub, and how you are going to
-submit most of your homework.</p>
-<ul class="simple">
-<li>Create a new folder in the <tt class="docutils literal"><span class="pre">students</span></tt> folder in the class repository.<ul>
-<li>Create the folder in your clone of your fork of the repository.</li>
-<li>Name it with your own name in CamelCase, like: <tt class="docutils literal"><span class="pre">ChrisBarker</span></tt>.</li>
-<li>In the folder create one new file, named <tt class="docutils literal"><span class="pre">README.md</span></tt> (or <tt class="docutils literal"><span class="pre">README.rst</span></tt>)</li>
-<li>In that new file, write up a few paragraphs about yourself.<ul>
-<li>Use proper <a class="reference external" href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">markdown</a> syntax. (or <a class="reference external" href="http://docutils.sourceforge.net/rst.html">reStructuredText</a>)</li>
-<li>Include at least two headings, of different levels.</li>
-<li>Include at least one link.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<ul class="simple">
-<li>Using <tt class="docutils literal"><span class="pre">git</span> <span class="pre">add</span></tt>, add the new folder and file to your clone of the
-repository.</li>
-<li>Using <tt class="docutils literal"><span class="pre">git</span> <span class="pre">commit</span></tt>, commit your changes to your clone (write a good commit
-message). If you later edit your file, don&#8217;t forget to commit those changes
-too.</li>
-<li>Using <tt class="docutils literal"><span class="pre">git</span> <span class="pre">push</span></tt>, push your commits to your fork on GitHub.</li>
-<li>In GitHub&#8217;s Web UI, make a <tt class="docutils literal"><span class="pre">pull</span> <span class="pre">request</span></tt> to the original CodeFellows
-repository.</li>
-</ul>
-<p>Remember, GitHub is a public place.  Your work in this repository is visible to
-the world.</p>
-</div>
-<div class="section" id="task-3">
-<h3>Task 3<a class="headerlink" href="#task-3" title="Permalink to this headline">¶</a></h3>
-<p><strong>Explore Errors</strong></p>
-<ul>
-<li><p class="first">Create a new directory in your personal folder in the <tt class="docutils literal"><span class="pre">students</span></tt> folder of the class repository:</p>
-<div class="highlight-python"><div class="highlight"><pre>$ mkdir session01
-$ cd session01
-</pre></div>
-</div>
-</li>
-<li><p class="first">Make sure you create it in your clone of your fork of the repository.</p>
-</li>
-<li><p class="first">Add a new file to it called <tt class="docutils literal"><span class="pre">break_me.py</span></tt></p>
-</li>
-<li><p class="first">Use <tt class="docutils literal"><span class="pre">git</span> <span class="pre">add</span></tt> to add the file to the repository.</p>
-</li>
-</ul>
-<ul class="simple">
-<li>In the <tt class="docutils literal"><span class="pre">break_me.py</span></tt> file write four simple Python functions:<ul>
-<li>Each function, when called, should cause an exception to happen</li>
-<li>Each function should result in one of the four common exceptions from our
-lecture.<ul>
-<li>for review: <tt class="docutils literal"><span class="pre">NameError</span></tt>, <tt class="docutils literal"><span class="pre">TypeError</span></tt>, <tt class="docutils literal"><span class="pre">SyntaxError</span></tt>, <tt class="docutils literal"><span class="pre">AttributeError</span></tt></li>
-</ul>
-</li>
-<li>Use the Python standard library reference on <a class="reference external" href="https://docs.python.org/2/library/exceptions.html">Built In Exceptions</a> as a
-reference</li>
-</ul>
-</li>
-</ul>
-<p>(hint &#8211; the interpreter will quit when it hits a Exception &#8211; so you can
-comment out all but the one you are testing at the moment)</p>
-<ul class="simple">
-<li>Use <tt class="docutils literal"><span class="pre">git</span> <span class="pre">commit</span></tt> to commit changes you make to your clone<ul>
-<li>Make frequent, small commits using <tt class="docutils literal"><span class="pre">git</span> <span class="pre">commit</span></tt> when working.</li>
-<li>Write clear, concise commit messages that explain what you are doing.</li>
-</ul>
-</li>
-<li>When you are finished with your work, use <tt class="docutils literal"><span class="pre">git</span> <span class="pre">push</span></tt> to push your changes
-to your fork on GitHub.</li>
-<li>Finally, issue a pull request to the original CodeFellows repository with
-your work.</li>
-</ul>
-</div>
+<p class="center large">Three Tasks due by Wednesday</p>
+<p><a class="reference external" href="./homework/task_1.html">Homework Task 1</a></p>
+<p><a class="reference external" href="./homework/task_2.html">Homework Task 2</a></p>
+<p><a class="reference external" href="./homework/task_3.html">Homework Task 3</a></p>
 </div>
 </div>
 
@@ -1560,19 +1470,14 @@ your work.</li>
 </ul>
 </li>
 <li><a class="reference internal" href="#puzzle-solved">Puzzle Solved</a></li>
-<li><a class="reference internal" href="#id2">Homework</a><ul>
-<li><a class="reference internal" href="#task-1">Task 1</a></li>
-<li><a class="reference internal" href="#task-2">Task 2</a></li>
-<li><a class="reference internal" href="#task-3">Task 3</a></li>
-</ul>
-</li>
+<li><a class="reference internal" href="#id2">Homework</a></li>
 </ul>
 </li>
 </ul>
 
   <h4>Previous topic</h4>
-  <p class="topless"><a href="index.html"
-                        title="previous chapter">In This Course</a></p>
+  <p class="topless"><a href="syllabus.html"
+                        title="previous chapter">Syllabus</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="session02.html"
                         title="next chapter">Session Two: Functions, Booleans and Modules</a></p>
@@ -1603,7 +1508,7 @@ your work.</li>
           <a href="session02.html" title="Session Two: Functions, Booleans and Modules"
              >next</a> |</li>
         <li class="right" >
-          <a href="index.html" title="In This Course"
+          <a href="syllabus.html" title="Syllabus"
              >previous</a> |</li>
         <li><a href="index.html">F2 Python</a> &raquo;</li> 
       </ul>
