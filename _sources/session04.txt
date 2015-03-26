@@ -1133,13 +1133,13 @@ Homework
 Assignments:
 -------------
 
-* Task 8: dict/sets lab
-* Task 9: Exceptions
-* Task 10: Mailroom Madness
-* Task 11: Investigate Session 5
+* Task 9: dict/sets lab
+* Task 10: Exceptions
+* Task 11: Mailroom Madness
+* Task 12: Investigate Session 5
 
 
-Task 8: Dictionaries and Sets
+Task 9: Dictionaries and Sets
 ---------------------
 
 1.
@@ -1198,7 +1198,7 @@ Text and files and dicts, and...
 ---------------------------------
 
 
-Task 9: Exceptions
+Task 10: Exceptions
 -----------
 
 * Improving raw_input :
@@ -1225,7 +1225,7 @@ Task 9: Exceptions
 
 
 
-Task 10: Mailroom Madness
+Task 11: Mailroom Madness
 ----------------
 
 * Using all you've learned so far, complete your mailroom program according to
@@ -1238,8 +1238,8 @@ Task 10: Mailroom Madness
   - For extra fun, see if you can use a file to preserve the donation list and
     changes made to it while the program is running.
 
-Task 11: Investigate Session 5
-------
+Task 12: Investigate Session 5
+------------------------------
 
 Read through the Session 05 slides.
 
