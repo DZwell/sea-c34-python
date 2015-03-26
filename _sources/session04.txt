@@ -1142,6 +1142,15 @@ Assignments:
 Task 9: Dictionaries and Sets
 ---------------------
 
+In your student folder, create a subdirectory called ``session04``.
+Create a new branch called ``task9`` and switch to it (``git checkout task9``).
+
+Within the ``session04`` subdirectory, create a new file called ``dict_lab.py``.
+
+Add the file to your clone of the repository and commit changes frequently
+while working on the following tasks. When you are done, push your changes to
+GitHub and issue a pull request.
+
 1.
 
 * Create a dictionary containing "name", "city", and "cake" for "Chris" from
@@ -1194,12 +1203,9 @@ Task 9: Dictionaries and Sets
 * display the union and intersection of the two sets.
 
 
-Text and files and dicts, and...
----------------------------------
-
 
 Task 10: Exceptions
------------
+-------------------
 
 * Improving raw_input :
   - Create a new file: safe_input.py -- add it to your repo, and submit a pull
@@ -1226,7 +1232,7 @@ Task 10: Exceptions
 
 
 Task 11: Mailroom Madness
-----------------
+-------------------------
 
 * Using all you've learned so far, complete your mailroom program according to
   the pseudocode and flow chart you created last session.
@@ -1270,7 +1276,7 @@ Use everything you've learned
 so far as needed (including lists, tuples, slicing, iteration, functions, booleans, printing, modules, assertions, dictionaries,
 sets, exceptions, file reading/writing, and paths).
 
-Create a branch in your local repo called `task11` and switch to it (`git checkout task11`).
+Create a branch in your local repo called `task12` and switch to it (`git checkout task12`).
 
 Add your files
 to that branch, commit and push, then submit a pull request to
