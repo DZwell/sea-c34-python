@@ -133,6 +133,62 @@ Fun with strings
 
   - `` "file_002 :   123.46, 1e+04" ``
 
+Homework Review
+======================
+
+Someone volunteer to have their homeworks
+(Task 6 and 7) debugged in-class.
+
+Free programming help!
+
+Prepare your Questions
+======================
+
+Open up your task 7 files in your text editor.
+
+* dictionaries.py
+* exceptions.py
+* paths.py
+* files.py
+
+Today's Puzzle: Trigrams
+========================
+
+N-grams are a way to study word associations
+
+https://books.google.com/ngrams
+
+.. nextslide::
+
+* Coding Kata 14 - Dave Thomas
+
+  http://codekata.com/kata/kata14-tom-swift-under-the-milkwood/
+
+  and in this doc:
+
+  http://codefellows.github.io/sea-c34-python/supplements/kata_fourteen.html
+
+* Use "The Travels of Marco Polo the Venetian" as input:
+
+  http://codefellows.github.io/sea-c34-python/_downloads/marco-polo.txt
+
+.. nextslide::
+
+* Our task today: read in the words from a large text file,
+  create a dictionary of trigrams.
+
+* Write pseudo code and create a design.
+
+* Use dictionaries, exceptions, file reading/writing.
+
+
+Announcements
+=====================
+
+* Enter your attendance in Canvas.
+* When are office hours?
+* Tell us when you prefer TA office hours
+* Collaboration is okay, but not copying.
 
 Dictionaries and Sets
 =====================
@@ -1074,22 +1130,16 @@ All the stuff in os.path and more:
 Homework
 =========
 
-Recommended Reading:
----------------------
-
-* Dive Into Python: Chapt. 13,14
-* Unicode: http://www.joelonsoftware.com/articles/Unicode.html
-
 Assignments:
 -------------
 
-* dict/sets lab
-* Exceptions
-* coding kata: trigrams
-* Mailroom Madness
+* Task 8: dict/sets lab
+* Task 9: Exceptions
+* Task 10: Mailroom Madness
+* Task 11: Investigate Session 5
 
 
-Dictionaries and Sets
+Task 8: Dictionaries and Sets
 ---------------------
 
 1.
@@ -1147,25 +1197,8 @@ Dictionaries and Sets
 Text and files and dicts, and...
 ---------------------------------
 
-* Coding Kata 14 - Dave Thomas
 
-  http://codekata.com/kata/kata14-tom-swift-under-the-milkwood/
-
-  and in this doc:
-
-  http://codefellows.github.io/sea-c28-students/supplements/kata_fourteen.html
-
-* Use The Adventures of Sherlock Holmes as input:
-
-  http://codefellows.github.io/sea-c28-students/_downloads/sherlock.txt
-
-* This is intentionally open-ended and underspecified. There are many
-  interesting decisions to make.
-
-* Experiment with different lengths for the lookup key. (3 words, 4 words, 3
-  letters, etc)
-
-Exceptions
+Task 9: Exceptions
 -----------
 
 * Improving raw_input :
@@ -1190,17 +1223,9 @@ Exceptions
     feature
 
 
-Paths and File Processing
---------------------------
-
-* write a program which prints the full path to all files in the current
-  directory, one per line
-
-* write a program which copies a file from a source, to a destination (without
-  using shutil, or the OS copy command)
 
 
-Mailroom Madness
+Task 10: Mailroom Madness
 ----------------
 
 * Using all you've learned so far, complete your mailroom program according to
@@ -1213,3 +1238,42 @@ Mailroom Madness
   - For extra fun, see if you can use a file to preserve the donation list and
     changes made to it while the program is running.
 
+Task 11: Investigate Session 5
+------
+
+Read through the Session 05 slides.
+
+http://codefellows.github.io/sea-c34-python/session05.html
+
+There are three sections. For each one, come up with three questions each.
+
+* Arguments (3 questions)
+* Comprehensions (3 questions)
+* Lambdas and Functional Programming (3 questions)
+
+Write some
+Python code to help you answer them, one function per question.
+
+For each function, write a good ``docstring`` describing what
+question you are trying to answer.
+
+Put the functions in four separate modules (files) called
+`arguments.py`, `comprehensions.py`, `functional.py` in the
+``session05`` subdirectory of your student directory.
+
+.. nextslide::
+
+That is, you should have nine questions, and nine functions, total,
+spread out across three files.
+
+Use everything you've learned
+so far as needed (including lists, tuples, slicing, iteration, functions, booleans, printing, modules, assertions, dictionaries,
+sets, exceptions, file reading/writing, and paths).
+
+Create a branch in your local repo called `task11` and switch to it (`git checkout task11`).
+
+Add your files
+to that branch, commit and push, then submit a pull request to
+the main class repo.
+
+Finally, submit your assignment in Canvas by giving the URL of the pull request.
