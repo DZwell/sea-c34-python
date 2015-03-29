@@ -9,3 +9,5 @@ def safe_input(prompt):
 # TEST CODE
 if __name__ == '__main__':
     print(safe_input("Test Prompt. Please Enter Something: "))
+    print(safe_input("Test Prompt. Please Enter '^D': "))
+    print(safe_input("Test Prompt. Please Enter '^C': "))
