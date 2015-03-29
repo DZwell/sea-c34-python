@@ -20,3 +20,5 @@ for x in message_text:
     cipher_text += cipher_char
 
 print cipher_text
+
+sdlk;abcdefghijklmnopqrstuvwxyz 
