@@ -645,8 +645,14 @@ Data&#8221; in NoSQL databases.</p>
 <h2>Homework<a class="headerlink" href="#homework" title="Permalink to this headline">¶</a></h2>
 <div class="build container">
 Of course there&#8217;s homework</div>
-<div class="section" id="id2">
-<h3>List comprehensions<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="task-13-list-comprehensions">
+<h3>Task 13: List Comprehensions<a class="headerlink" href="#task-13-list-comprehensions" title="Permalink to this headline">¶</a></h3>
+<p>In your student folder, create a subdirectory called <tt class="docutils literal"><span class="pre">session05</span></tt>.
+Create a new branch called <tt class="docutils literal"><span class="pre">task13</span></tt> and switch to it (<tt class="docutils literal"><span class="pre">git</span> <span class="pre">checkout</span> <span class="pre">-b</span> <span class="pre">task13</span></tt>).</p>
+<p>Within the <tt class="docutils literal"><span class="pre">session05</span></tt> subdirectory, create a new file called <tt class="docutils literal"><span class="pre">list_comp.py</span></tt>.</p>
+<p>Add the file to your clone of the repository and commit changes frequently
+while working on the following tasks. When you are done, push your changes to
+GitHub and create a pull request titled <tt class="docutils literal"><span class="pre">Task</span> <span class="pre">13</span> <span class="pre">pull</span> <span class="pre">request</span> <span class="pre">from</span> <span class="pre">Your</span> <span class="pre">Name</span></tt> where you should substitute your name for <tt class="docutils literal"><span class="pre">Your</span> <span class="pre">Name</span></tt>.</p>
 <p>Note: this is a bit of a &#8220;backwards&#8221; exercise &#8211; given some code, you figure
 out what it does.</p>
 <div class="build container">
@@ -773,8 +779,15 @@ array.</p>
 </div>
 </div>
 </div>
-<div class="section" id="dict-and-set-comprehensions">
-<h3><tt class="docutils literal"><span class="pre">dict</span></tt> and <tt class="docutils literal"><span class="pre">set</span></tt> comprehensions<a class="headerlink" href="#dict-and-set-comprehensions" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="task-14-dictionary-and-set-comprehensions">
+<h3>Task 14: Dictionary and Set Comprehensions<a class="headerlink" href="#task-14-dictionary-and-set-comprehensions" title="Permalink to this headline">¶</a></h3>
+<p>In your <tt class="docutils literal"><span class="pre">session05</span></tt> directory, write the following code
+into a new file called <tt class="docutils literal"><span class="pre">dict_comp.py</span></tt>.</p>
+<p>Add the file to your local working repository
+and commit changes frequently
+while working on the following tasks. When you are done, push your changes to
+GitHub and create a pull request
+titled <tt class="docutils literal"><span class="pre">Task</span> <span class="pre">14</span> <span class="pre">pull</span> <span class="pre">request</span> <span class="pre">from</span> <span class="pre">Your</span> <span class="pre">Name</span></tt> where you should substitute your name for <tt class="docutils literal"><span class="pre">Your</span> <span class="pre">Name</span></tt>.</p>
 <p>Let&#8217;s revisiting the dict/set lab &#8211; see how much you can do with
 comprehensions instead.</p>
 <div class="build container">
@@ -823,8 +836,15 @@ inside a list comprehension. (OK, that may be getting carried away!)</li>
 </li>
 </ol>
 </div>
-<div class="section" id="lambda-and-keyword-argument-magic">
-<h3>lambda and keyword argument magic<a class="headerlink" href="#lambda-and-keyword-argument-magic" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="task-15-lambda-and-keyword-argument-magic">
+<h3>Task 15: Lambda and Keyword Argument Magic<a class="headerlink" href="#task-15-lambda-and-keyword-argument-magic" title="Permalink to this headline">¶</a></h3>
+<p>In your <tt class="docutils literal"><span class="pre">session05</span></tt> directory, write the following code
+into a new file called <tt class="docutils literal"><span class="pre">lambda.py</span></tt>.</p>
+<p>Add the file to your local working repository
+and commit changes frequently
+while working on the following tasks. When you are done, push your changes to
+GitHub and create a pull request
+titled <tt class="docutils literal"><span class="pre">Task</span> <span class="pre">15</span> <span class="pre">pull</span> <span class="pre">request</span> <span class="pre">from</span> <span class="pre">Your</span> <span class="pre">Name</span></tt> where you should substitute your name for <tt class="docutils literal"><span class="pre">Your</span> <span class="pre">Name</span></tt>.</p>
 <p>Write a function that returns a list of n functions, such that each one, when
 called, will return the input value, incremented by an increasing number.</p>
 <p>Use a <tt class="docutils literal"><span class="pre">for</span></tt> loop, a <tt class="docutils literal"><span class="pre">lambda</span></tt>, and a keyword argument</p>
@@ -849,26 +869,35 @@ called, will return the input value, incremented by an increasing number.</p>
 </pre></div>
 </div>
 </div>
-<div class="section" id="functional-files">
-<h3>Functional files<a class="headerlink" href="#functional-files" title="Permalink to this headline">¶</a></h3>
-<p>Write a program that takes a filename and &#8220;cleans&#8221; the file be removing all the
-leading and trailing whitespace from each line.</p>
-<p>Read in the original file and write out a new one, either creating a new file
-or overwriting the existing one.</p>
-<p>Give your user the option of which to perform.</p>
-<p>Use <tt class="docutils literal"><span class="pre">map()</span></tt> to do the work.</p>
-<p>Write a second version using a comprehension.</p>
-<p><tt class="docutils literal"><span class="pre">sys.argv</span></tt> hold the command line arguments the user typed in. If the user
-types:</p>
-<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>python the_script a_file_name
-</pre></div>
-</div>
-<p>Then:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">sys</span>
-<span class="n">filename</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-</pre></div>
-</div>
-<p>will get <tt class="docutils literal"><span class="pre">filename</span> <span class="pre">==</span> <span class="pre">&quot;a_file_name&quot;</span></tt></p>
+<div class="section" id="task-16-investigate-session-6">
+<h3>Task 16: Investigate Session 6<a class="headerlink" href="#task-16-investigate-session-6" title="Permalink to this headline">¶</a></h3>
+<p>Read through the Session 6 slides.</p>
+<p><a class="reference external" href="http://codefellows.github.io/sea-c34-python/session06.html">http://codefellows.github.io/sea-c34-python/session06.html</a></p>
+<p>There are four sections. For each one, come up with the following
+numbers of questions.</p>
+<ul class="simple">
+<li>Object-Oriented Programming (2 questions)</li>
+<li>Python Classes (1 question)</li>
+<li>Subclassing and More Subclassing (4 questions)</li>
+</ul>
+<p>Write some
+Python code to answer these questions, one function per question.</p>
+<p>For each function, write a good <tt class="docutils literal"><span class="pre">docstring</span></tt> describing what
+question you are trying to answer.</p>
+<p>Put the functions in four separate modules (files) called
+<cite>oop.py</cite>, <cite>classes.py</cite>, and <cite>subclasses.py</cite> in the
+<tt class="docutils literal"><span class="pre">session05</span></tt> subdirectory of your student directory.</p>
+<p>That is, you should have seven questions, and seven functions, total,
+spread out across three files.</p>
+<p>Use everything you&#8217;ve learned
+so far as needed (including lists, tuples, slicing, iteration, functions, booleans, printing, modules, assertions, dictionaries,
+sets, exceptions, file reading/writing, and paths).</p>
+<p>Create a branch in your local repo called <cite>task16</cite> and switch to it (<cite>git checkout task16</cite>).</p>
+<p>Add your files
+to that branch, commit and push, then create a pull request to
+the main class repo,
+titled <tt class="docutils literal"><span class="pre">Task</span> <span class="pre">16</span> <span class="pre">pull</span> <span class="pre">request</span> <span class="pre">from</span> <span class="pre">Your</span> <span class="pre">Name</span></tt> where you should substitute your name for <tt class="docutils literal"><span class="pre">Your</span> <span class="pre">Name</span></tt>.</p>
+<p>Finally, submit your assignment in Canvas by giving the URL of the pull request.</p>
 </div>
 <div class="section" id="recommended-reading">
 <h3>Recommended Reading<a class="headerlink" href="#recommended-reading" title="Permalink to this headline">¶</a></h3>
@@ -932,10 +961,10 @@ types:</p>
 </ul>
 </li>
 <li><a class="reference internal" href="#homework">Homework</a><ul>
-<li><a class="reference internal" href="#id2">List comprehensions</a></li>
-<li><a class="reference internal" href="#dict-and-set-comprehensions"><tt class="docutils literal"><span class="pre">dict</span></tt> and <tt class="docutils literal"><span class="pre">set</span></tt> comprehensions</a></li>
-<li><a class="reference internal" href="#lambda-and-keyword-argument-magic">lambda and keyword argument magic</a></li>
-<li><a class="reference internal" href="#functional-files">Functional files</a></li>
+<li><a class="reference internal" href="#task-13-list-comprehensions">Task 13: List Comprehensions</a></li>
+<li><a class="reference internal" href="#task-14-dictionary-and-set-comprehensions">Task 14: Dictionary and Set Comprehensions</a></li>
+<li><a class="reference internal" href="#task-15-lambda-and-keyword-argument-magic">Task 15: Lambda and Keyword Argument Magic</a></li>
+<li><a class="reference internal" href="#task-16-investigate-session-6">Task 16: Investigate Session 6</a></li>
 <li><a class="reference internal" href="#recommended-reading">Recommended Reading</a></li>
 </ul>
 </li>

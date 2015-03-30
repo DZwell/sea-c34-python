@@ -812,8 +812,17 @@ Homework
 
     Of course there's homework
 
-List comprehensions
---------------------
+Task 13: List Comprehensions
+----------------------------
+
+In your student folder, create a subdirectory called ``session05``.
+Create a new branch called ``task13`` and switch to it (``git checkout -b task13``).
+
+Within the ``session05`` subdirectory, create a new file called ``list_comp.py``.
+
+Add the file to your clone of the repository and commit changes frequently
+while working on the following tasks. When you are done, push your changes to
+GitHub and create a pull request titled ``Task 13 pull request from Your Name`` where you should substitute your name for ``Your Name``.
 
 Note: this is a bit of a "backwards" exercise -- given some code, you figure
 out what it does.
@@ -996,8 +1005,18 @@ https://github.com/gregmalcolm/python_koans/blob/master/python2/koans/about_comp
            one_line_comprehension_here
 
 
-``dict`` and ``set`` comprehensions
-------------------------------------
+Task 14: Dictionary and Set Comprehensions
+------------------------------------------
+
+In your ``session05`` directory, write the following code
+into a new file called ``dict_comp.py``.
+
+Add the file to your local working repository
+and commit changes frequently
+while working on the following tasks. When you are done, push your changes to
+GitHub and create a pull request
+titled ``Task 14 pull request from Your Name`` where you should substitute your name for ``Your Name``.
+
 
 Let's revisiting the dict/set lab -- see how much you can do with
 comprehensions instead.
@@ -1053,8 +1072,17 @@ comprehensions instead.
    c. Extra credit:  do it all as a one-liner by nesting a set comprehension
       inside a list comprehension. (OK, that may be getting carried away!)
 
-lambda and keyword argument magic
----------------------------------
+Task 15: Lambda and Keyword Argument Magic
+------------------------------------------
+
+In your ``session05`` directory, write the following code
+into a new file called ``lambda.py``.
+
+Add the file to your local working repository
+and commit changes frequently
+while working on the following tasks. When you are done, push your changes to
+GitHub and create a pull request
+titled ``Task 15 pull request from Your Name`` where you should substitute your name for ``Your Name``.
 
 Write a function that returns a list of n functions, such that each one, when
 called, will return the input value, incremented by an increasing number.
@@ -1088,39 +1116,48 @@ Not clear? here's what you should get:
     8
 
 
-Functional files
------------------
 
-Write a program that takes a filename and "cleans" the file be removing all the
-leading and trailing whitespace from each line.
+Task 16: Investigate Session 6
+------------------------------
 
-Read in the original file and write out a new one, either creating a new file
-or overwriting the existing one.
+Read through the Session 6 slides.
 
-Give your user the option of which to perform.
+http://codefellows.github.io/sea-c34-python/session06.html
 
-Use ``map()`` to do the work.
+There are four sections. For each one, come up with the following
+numbers of questions.
 
-Write a second version using a comprehension.
+* Object-Oriented Programming (2 questions)
+* Python Classes (1 question)
+* Subclassing and More Subclassing (4 questions)
 
-.. nextslide:: Hint
+Write some
+Python code to answer these questions, one function per question.
 
-``sys.argv`` hold the command line arguments the user typed in. If the user
-types:
+For each function, write a good ``docstring`` describing what
+question you are trying to answer.
 
-.. code-block:: bash
+Put the functions in four separate modules (files) called
+`oop.py`, `classes.py`, and `subclasses.py` in the
+``session05`` subdirectory of your student directory.
 
-  $ python the_script a_file_name
+.. nextslide::
 
-Then:
+That is, you should have seven questions, and seven functions, total,
+spread out across three files.
 
-.. code-block:: python
+Use everything you've learned
+so far as needed (including lists, tuples, slicing, iteration, functions, booleans, printing, modules, assertions, dictionaries,
+sets, exceptions, file reading/writing, and paths).
 
-    import sys
-    filename = sys.argv[1]
+Create a branch in your local repo called `task16` and switch to it (`git checkout task16`).
 
-will get ``filename == "a_file_name"``
+Add your files
+to that branch, commit and push, then create a pull request to
+the main class repo,
+titled ``Task 16 pull request from Your Name`` where you should substitute your name for ``Your Name``.
 
+Finally, submit your assignment in Canvas by giving the URL of the pull request.
 
 Recommended Reading
 ---------------------
