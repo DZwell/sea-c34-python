@@ -1027,10 +1027,10 @@ A lot of it is about using iterators -- now you know what those really are.
 
 https://www.youtube.com/watch?v=OSGv2VnC0go
 
-Assignments
+Homework
 -----------
 
-Task 1: Timing Context Manager
+Task 21: Timing Context Manager
 
 Create a context manager that will print to stdout the elapsed time taken to
 run all the code inside the context:
@@ -1050,7 +1050,7 @@ timing should be printed to the file-like object.
 
 .. nextslide::
 
-Task 2: ``p-wrapper`` Decorator
+Task 22: ``p-wrapper`` Decorator
 
 Write a simple decorator you can apply to a function that returns a string.
 Decorating such a function should result in the original output, wrapped by an
@@ -1071,8 +1071,8 @@ provided by Web Frameworks.
 
 .. nextslide::
 
-Task 3: Generator Homework (documented above)
+Task 23: Generator Homework (documented above)
 
-Task 4: Iterator Homework (documented above)
+Task 24: Iterator Homework (documented above)
 
 

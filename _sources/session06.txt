@@ -788,6 +788,9 @@ Thinking OO in Python:
 Homework
 ========
 
+Task 17: HTML Renderer
+----------------------
+
 .. rst-class:: left
 .. container::
 
@@ -803,3 +806,56 @@ Homework
     * Subclasses overriding the ``__init__``
 
     These are the core OO approaches
+
+Create a directory called ``session06`` in your student directory.
+Create a branch in your local repo called `task17` and switch to it (`git checkout -b task17`).
+
+Add your files
+to that branch, commit frequently, and push to it as you work,
+writing good commit messages.
+Then create a pull request to the main class repo,
+titled ``Task 17 pull request from Your Name`` where you should substitute your name for ``Your Name``.
+
+Task 18: Investigate Session 7
+------------------------------
+
+Read through the Session 7 slides.
+
+http://codefellows.github.io/sea-c34-python/session07.html
+
+There are five sections. For each one, come up with one question.
+
+* Testing (1 question)
+* Multiple Inheritance (1 question)
+* Properties (1 question)
+* Class and Static Methods (1 question)
+* Special (Magic) Methods (1 question)
+
+Write some
+Python code to answer these questions, one function per question.
+
+For each function, write a good ``docstring`` describing what
+question you are trying to answer.
+
+Put the functions in four separate modules (files) called
+`testing.py`, `multiple.py`, `properties.py`, `static.py`, and
+`special.py` in the
+``session06`` subdirectory of your student directory.
+
+.. nextslide::
+
+That is, you should have seven questions, and seven functions, total,
+spread out across three files.
+
+You may use everything you've learned
+so far as needed (including lists, tuples, slicing, iteration, functions, booleans, printing, modules, assertions, dictionaries,
+sets, exceptions, file reading/writing, paths, lambdas, keyword/variable arguments, comprehensions, and object-oriented programming).
+
+Create a branch in your local repo called `task18` and switch to it (`git checkout task18`).
+
+Add your files
+to that branch, commit and push, then create a pull request to
+the main class repo,
+titled ``Task 18 pull request from Your Name`` where you should substitute your name for ``Your Name``.
+
+Finally, submit your assignment in Canvas by giving the URL of the pull request.
