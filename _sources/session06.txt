@@ -20,47 +20,65 @@ Review of Previous Class
 * Argument Passing: ``*args``, ``**kwargs``
 * comprehensions
 * ``lambda``
-
+* Solutions to the FizzBuzz problem.
 
 Homework review
 ---------------
 
-Homework Questions?
+* LBYL vs. EAFP
+
+http://stackoverflow.com/questions/404795/lbyl-vs-eafp-in-java
+
+* Line Indentations
+
+* 
+
+Other Homework Questions?
 
 .. rst-class:: build
 .. container::
 
-    If it seems harder than it should be -- it is!
+Review of Survey Feedback
+-------------------------
 
-    A solution to the trigram:
+* Introductory readings
+* More up-front explanation in class
+* More connection between homework and in-class exercises
+* Faster homework grading
 
-    .. rst-class:: build
+Questions
+-------------------------
 
-    * (``dict.setdefault()``  trick...)
-    * ``global`` keyword?
+* How will this prepare me for the dev accelerator?
+* What about independent projects for my software portfolio?
+* Do we have to worry about proper Git / GitHub technique?
+
+Resources
+-------------------------
+
+Beginner-Friendly Textbooks
+
+* `Interactive Python <http://interactivepython.org/runestone/static/Python-F2/index.html>`_
+* `Dive Into Python <http://www.diveintopython.net/toc/index.html>`_
+* `Learn Python the Hard Way <http://learnpythonthehardway.org/book/>`_
+
+.. nextslide::
+
+Portfolio Projects, Building Community
+
+http://newcoder.io/
+
+Calling Twitter APIs (thanks @mhazani!)
 
 
-Unicode Notes
--------------
+.. nextslide::
 
-To put unicode in your source file, put:
+Preparation for Dev Accelerator Code Challenge
 
-.. code-block:: python
+Django Resources
 
-    #!/usr/bin/env python
-    # -*- coding: utf-8 -*-
-
-at the top of your file ... and be sure to save it as utf-8!
-(file->save with encoding in Sublime)
-
-You also might want to put::
-
-    from __future__ import unicode_literals
-
-Additional notes on using Unicode in Python see:
-
-    :ref:`unicode_supplement`
-
+* `Tango With Django <http://www.tangowithdjango.com>`_
+* `The official Django tutorial <https://docs.djangoproject.com/en/1.7/intro/tutorial01/>`_
 
 
 Object Oriented Programming
@@ -69,22 +87,17 @@ Object Oriented Programming
 .. rst-class:: left
 .. container::
 
-    More about Python implementation than OO design/strengths/weaknesses
+    Object-oriented programming narrows the "semantic gap".
 
-    .. rst-class:: build
-    .. container::
-    
-        One reason for this:
+    You can model real world objects with software objects.
 
-        Folks can't even agree on what OO "really" means
+    We'll talk more about Python implementation than OO design/strengths/weaknesses
 
-        See:
+More Detailed Reading:
+----------------------
 
-            The Quarks of Object-Oriented Development
-
-            -- Deborah J. Armstrong
-
-        http://agp.hx0.ru/oop/quarks.pdf
+`Dive Into Python, 5.3-5.5 on Classes <http://www.diveintopython.net/object_oriented_framework/defining_classes.html>`_
+`Learn Python the Hard Way <
 
 
 Object Oriented Programming
@@ -164,12 +177,6 @@ The OO buzzwords:
     * inheritance
 
     Python does all of this, though it doesn't enforce them.
-
-.. nextslide::
-
-You can do OO in C
-
-(see the GTK+ project)
 
 .. rst-class:: build
 .. container::

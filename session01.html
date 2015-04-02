@@ -1358,6 +1358,24 @@ back is</p>
 <p>Before next session, you&#8217;ll use what you&#8217;ve learned here today to do some
 exercises in Python programming</p>
 </div>
+<div class="section" id="unicode-notes">
+<h3>Unicode Notes<a class="headerlink" href="#unicode-notes" title="Permalink to this headline">¶</a></h3>
+<p>You might need this for the puzzle if you use foreign languages.</p>
+<p>To put unicode in your source file, put:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="c">#!/usr/bin/env python</span>
+<span class="c"># -*- coding: utf-8 -*-</span>
+</pre></div>
+</div>
+<p>at the top of your file ... and be sure to save it as utf-8!
+(file-&gt;save with encoding in Sublime)</p>
+<p>You also might want to put:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">unicode_literals</span>
+</pre></div>
+</div>
+<p>Additional notes on using Unicode in Python see:</p>
+<blockquote>
+<div><a class="reference internal" href="supplements/unicode.html#unicode-supplement"><em>Unicode in Python 2</em></a></div></blockquote>
+</div>
 </div>
 <div class="section" id="puzzle-solved">
 <h2>Puzzle Solved<a class="headerlink" href="#puzzle-solved" title="Permalink to this headline">¶</a></h2>
@@ -1467,6 +1485,7 @@ to the program.</p>
 <li><a class="reference internal" href="#functions-parameters">Functions: parameters</a></li>
 <li><a class="reference internal" href="#functions-arguments">Functions: arguments</a></li>
 <li><a class="reference internal" href="#enough-for-now">Enough For Now</a></li>
+<li><a class="reference internal" href="#unicode-notes">Unicode Notes</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#puzzle-solved">Puzzle Solved</a></li>

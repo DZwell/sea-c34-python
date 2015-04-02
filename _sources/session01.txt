@@ -1779,6 +1779,30 @@ That's it for our basic intro to Python
 Before next session, you'll use what you've learned here today to do some
 exercises in Python programming
 
+Unicode Notes
+-------------
+
+You might need this for the puzzle if you use foreign languages.
+
+To put unicode in your source file, put:
+
+.. code-block:: python
+
+    #!/usr/bin/env python
+    # -*- coding: utf-8 -*-
+
+at the top of your file ... and be sure to save it as utf-8!
+(file->save with encoding in Sublime)
+
+You also might want to put::
+
+    from __future__ import unicode_literals
+
+Additional notes on using Unicode in Python see:
+
+    :ref:`unicode_supplement`
+
+
 Puzzle Solved
 ========
 
