@@ -5,7 +5,11 @@ alphabet = "abcdefghijklmnopqrstuvwxyz "
 alphabet_list = [alphabet[i] for i in range(len(alphabet))]
 # alphabet_list = list(alphabet)
 
+<<<<<<< HEAD
 # print(alphabet_list)
+=======
+#print(alphabet_list)
+>>>>>>> 6d22b5c1ca727e30378ed07ffb7a9fc067aa46d3
 
 message_text = "what is a baggins"
 
@@ -29,3 +33,18 @@ for y in new_cipher_text:
     decrypt_text += decrypt_char
 
 print decrypt_text
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> 6d22b5c1ca727e30378ed07ffb7a9fc067aa46d3
