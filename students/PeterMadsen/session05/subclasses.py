@@ -9,9 +9,19 @@ class SpecialList(list):
         self[0] = value
 
     # Question 2
-    def pop(self):
-        """Can overload an operator with a different default value"""
-        self[-1]
+    def replace(self, index, value):
+        """
+        How would you write a method that would allow you to replace
+        a value in a list with a different value but would return the original
+        value?
+
+        """
+        try:
+            temp = self[index]
+            self[index] = value
+            return temp
+        except IndexError as e:
+            print(e)
 
     # Question 3
     def spam(self):
@@ -24,13 +34,28 @@ class SpecialList(list):
             self[index] = 'spam'
 
     # Question 4
+    def switch(self, a, b):
+        """
+        How would you write a method that extends the functionality of
+        lists so that you can switch the value of the list at 'a' with the
+        value of the list at 'b'?
 
+        """
+        try:
+            self[a], self[b] = self[b], self[a]
+        except IndexError as e:
+            print("That index is out of bounds", e)
+
+# Test Code -----
 if __name__ == '__main__':
     test_list = SpecialList()
-    test_list.extend([1, 2, 3])
+    test_list.extend([1, 2, 3, 4, 5])
     test_list.append(45)
     print(test_list)
-    test_list.pop()
+    test_list.switch(0, 2)
     print(test_list)
     test_list.spam()
     print(test_list)
+    test_var = test_list.replace(4, 12312)
+    print(test_list)
+    print(test_var)
