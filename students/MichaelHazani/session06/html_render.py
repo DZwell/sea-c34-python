@@ -42,3 +42,9 @@ class Body(Element):
 
     openingtag = "<body>"
     closingtag = "</body>"
+
+
+class Head(Element):
+
+    openingtag = "<head>"
+    closingtag = "</head>"
