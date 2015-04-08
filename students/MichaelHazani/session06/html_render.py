@@ -106,3 +106,30 @@ class Hr(SelfClosingTag):
 
 class Br(SelfClosingTag):
     openingtag = "<br />"
+
+
+class Ul(Element):
+
+    openingtag = "<ul"
+    closingtag = "</ul"
+
+
+class Li(Element):
+
+    openingtag = "<li"
+    closingtag = "</li"
+
+
+class H(OneLineTag):
+
+    openingtag = "<h"
+    closingtag = "</h"
+
+    def __init__(self, number, content=None, **kwargs):
+            self.openingtag = self.openingtag + str(number)
+            self.atts = kwargs
+
+            if content:
+                self.children = [content]
+            else:
+                self.children = []
