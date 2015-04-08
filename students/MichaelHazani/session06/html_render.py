@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 class Element(object):
-    """ A class that renders to HTML per the class exercise
+    """ The main abstract class that renders to HTML per the requirements
     """
     openingtag = '<'
     closingtag = '</'
@@ -33,26 +33,8 @@ class Element(object):
         file_out.write("\n" + ind + self.closingtag + self.c)
 
 
-class P(Element):
-
-    openingtag = "<p"
-    closingtag = "</p"
-
-
-class Html(Element):
-
-    openingtag = "<html"
-    closingtag = "</html"
-
-
-class Body(Element):
-
-    openingtag = "<body"
-    closingtag = "</body"
-
-
 class OneLineTag(Element):
-
+    """Abstract class for one line tags"""
     def render(self, file_out, ind=""):
         file_out.write("\n" + ind + self.openingtag)
         for atri, val in self.atts.items():
@@ -66,20 +48,8 @@ class OneLineTag(Element):
         file_out.write(self.closingtag + self.c)
 
 
-class Title(OneLineTag):
-
-    openingtag = "<title"
-    closingtag = "</title"
-
-
-class Head(Element):
-
-    openingtag = "<head"
-    closingtag = "</head"
-
-
 class SelfClosingTag(Element):
-
+    """Abstract class for Self Closing Tags"""
     def render(self, file_out, ind=""):
         file_out.write("\n" + ind + self.openingtag)
         for atri, val in self.atts.items():
@@ -92,7 +62,55 @@ class SelfClosingTag(Element):
                 file_out.write(ind + self.indent + child)
 
 
+class P(Element):
+    """Paragraph tag class"""
+    openingtag = "<p"
+    closingtag = "</p"
+
+
+class Html(Element):
+    """HTML tag class"""
+    openingtag = "<!DOCTYPE html> \n <html"
+    closingtag = "</html"
+
+
+class Body(Element):
+    """Body tag class"""
+    openingtag = "<body"
+    closingtag = "</body"
+
+
+class Ul(Element):
+    """Unordered list tag class"""
+    openingtag = "<ul"
+    closingtag = "</ul"
+
+
+class Li(Element):
+    """Ordered List tag class"""
+    openingtag = "<li"
+    closingtag = "</li"
+
+
+class Title(OneLineTag):
+    """Title tag class which inherits from OneLineTag"""
+    openingtag = "<title"
+    closingtag = "</title"
+
+
+class Head(Element):
+    """Head tag class"""
+    openingtag = "<head"
+    closingtag = "</head"
+
+
+class Meta(SelfClosingTag):
+    """Meta tag class"""
+    openingtag = '<meta charset="UTF-8" />'
+
+
 class A(OneLineTag):
+    """A tag class"""
     openingtag = "<a"
     closingtag = "</a"
 
@@ -101,27 +119,17 @@ class A(OneLineTag):
 
 
 class Hr(SelfClosingTag):
+    """Hr tag class"""
     openingtag = "<hr />"
 
 
 class Br(SelfClosingTag):
+    """Br tag class"""
     openingtag = "<br />"
 
 
-class Ul(Element):
-
-    openingtag = "<ul"
-    closingtag = "</ul"
-
-
-class Li(Element):
-
-    openingtag = "<li"
-    closingtag = "</li"
-
-
 class H(OneLineTag):
-
+    """Header tag class"""
     openingtag = "<h"
     closingtag = "</h"
 
