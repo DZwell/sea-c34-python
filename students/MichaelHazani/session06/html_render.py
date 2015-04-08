@@ -2,8 +2,8 @@
 class Element(object):
     """ A class that renders to HTML per the class exercise
     """
-    openingtag = '<default>'
-    closingtag = '</default>'
+    openingtag = '<>'
+    closingtag = '</>'
     indent = '    '
 
     def __init__(self, content=None):
@@ -16,14 +16,14 @@ class Element(object):
         self.children.append(element_to_append)
 
     def render(self, file_out, ind=""):
-        file_out.write("\n" + self.indent + ind + self.openingtag)
+        file_out.write("\n" + ind + self.openingtag)
         for child in self.children:
             try:
                 child.render(file_out, self.indent + ind)
             except AttributeError:
                 file_out.write("\n")
                 file_out.write(ind + self.indent + child)
-        file_out.write("\n" + ind + self.indent + self.closingtag)
+        file_out.write("\n" + ind + self.closingtag)
 
 
 class P(Element):
