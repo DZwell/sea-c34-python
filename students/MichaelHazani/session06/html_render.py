@@ -2,20 +2,43 @@
 class Element(object):
     """ A class that renders to HTML per the class exercise
     """
-    tag = 'html'
+    openingtag = '<default>'
+    closingtag = '</default>'
     indent = '    '
 
     def __init__(self, content=None):
         if content:
-            self.content += content
+            self.children = [content]
         else:
-            self.content = ""
+            self.children = []
 
     def append(self, element_to_append):
-        self.content += (self.indent + element_to_append)
+        self.children.append(element_to_append)
 
     def render(self, file_out, ind=""):
-        outstring = (self.indent + "<" + self.tag + ">\n"
-                     + self.indent + self.content + "\n"
-                     + self.indent + "</" + self.tag + ">")
-        file_out.write(outstring)
+        file_out.write("\n" + self.indent + ind + self.openingtag + "\n")
+        for child in self.children:
+            try:
+                child.render(file_out, self.indent + ind)
+            except AttributeError:
+                file_out.write("\n")
+                file_out.write(ind + self.indent + child)
+        file_out.write("\n" + ind + self.indent + self.closingtag)
+
+
+class P(Element):
+
+    openingtag = "<p>"
+    closingtag = "</p>"
+
+
+class Html(Element):
+
+    openingtag = "<html>"
+    closingtag = "</html>"
+
+
+class Body(Element):
+
+    openingtag = "<body>"
+    closingtag = "</body>"
