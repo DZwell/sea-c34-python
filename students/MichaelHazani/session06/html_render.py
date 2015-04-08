@@ -54,13 +54,16 @@ class Body(Element):
 class OneLineTag(Element):
 
     def render(self, file_out, ind=""):
-            file_out.write("\n" + ind + self.openingtag + self.c)
-            for child in self.children:
-                try:
-                    child.render(file_out)
-                except AttributeError:
-                    file_out.write(child)
-            file_out.write(self.closingtag + self.c)
+        file_out.write("\n" + ind + self.openingtag)
+        for atri, val in self.atts.items():
+            file_out.write(" %s=\"%s\"" % (atri, val))
+        file_out.write(self.c)
+        for child in self.children:
+            try:
+                child.render(file_out)
+            except AttributeError:
+                file_out.write(child)
+        file_out.write(self.closingtag + self.c)
 
 
 class Title(OneLineTag):
@@ -87,6 +90,14 @@ class SelfClosingTag(Element):
             except AttributeError:
                 file_out.write("\n")
                 file_out.write(ind + self.indent + child)
+
+
+class A(OneLineTag):
+    openingtag = "<a"
+    closingtag = "</a"
+
+    def __init__(self, link, content=None):
+            OneLineTag.__init__(self, content, href=link)
 
 
 class Hr(SelfClosingTag):
