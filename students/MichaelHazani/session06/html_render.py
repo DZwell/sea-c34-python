@@ -16,7 +16,7 @@ class Element(object):
         self.children.append(element_to_append)
 
     def render(self, file_out, ind=""):
-        file_out.write("\n" + self.indent + ind + self.openingtag + "\n")
+        file_out.write("\n" + self.indent + ind + self.openingtag)
         for child in self.children:
             try:
                 child.render(file_out, self.indent + ind)
