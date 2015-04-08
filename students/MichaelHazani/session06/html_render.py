@@ -60,6 +60,7 @@ class SelfClosingTag(Element):
             except AttributeError:
                 file_out.write("\n")
                 file_out.write(ind + self.indent + child)
+        file_out.write(" /" + self.c)
 
 
 class P(Element):
@@ -106,7 +107,7 @@ class Head(Element):
 
 class Meta(SelfClosingTag):
     """Meta tag class"""
-    openingtag = '<meta charset="UTF-8" />'
+    openingtag = '<meta'
 
 
 class A(OneLineTag):
@@ -120,12 +121,12 @@ class A(OneLineTag):
 
 class Hr(SelfClosingTag):
     """Hr tag class"""
-    openingtag = "<hr />"
+    openingtag = "<hr"
 
 
 class Br(SelfClosingTag):
     """Br tag class"""
-    openingtag = "<br />"
+    openingtag = "<br"
 
 
 class H(OneLineTag):
