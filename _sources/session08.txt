@@ -6,6 +6,16 @@ Session Eight: Generators, Iterators, Decorators, and Context Managers
 
 The tools of Pythonicity
 
+Last Session!
+================
+
+* Review Circle Testing, HTML Renderer
+* Complexity, Data Structures
+* Decorators
+* Iterators
+* Generators
+* Context Managers
+* The Future
 
 Review/Questions
 ================
@@ -1002,7 +1012,65 @@ Or, we can allow them to propagate:
           4
     RuntimeError: error raised
 
-Homework
+Accounting
+==========
+
+Personal Growth Plan
+
+Attendance
+
+All homework due for final grading by Tuesday, April 14
+
+The Future
+==========
+
+Book for More In-Depth Introduction:
+
+`Learning Python by John Zelle <http://mcsp.wartburg.edu/zelle/python/ppics2/index.html>`_
+
+Intermediate
+
+newcoder.io
+
+Dev Accelerator
+--------------------
+
+June
+
+3 code challenge questions.
+
+Main study resources:
+
+Go over class notes again.
+
+Do mock interviews with each other. Talk about code!
+
+Read up on Django basics.
+
+Data Science
+--------------------
+
+UW CSE 140: Data Programming
+https://courses.cs.washington.edu/courses/cse140/14wi/
+
+Machine learning example with Theano and MNIST
+
+http://deeplearning.net/software/theano/
+
+http://yann.lecun.com/exdb/mnist/
+
+How to Keep in Touch
+--------------------
+
+Drinks at Bravehorse after class
+
+TA for me at next Python F2
+
+LinkedIn (paulpham@yahoo.com)
+
+Hacker Hour meetups on Tuesdays
+
+(Optional) Homework
 ========
 
 Python Power
@@ -1027,8 +1095,8 @@ A lot of it is about using iterators -- now you know what those really are.
 
 https://www.youtube.com/watch?v=OSGv2VnC0go
 
-Homework
------------
+Optional Homework
+-----------------
 
 Task 21: Timing Context Manager
 
@@ -1075,4 +1143,7 @@ Task 23: Generator Homework (documented above)
 
 Task 24: Iterator Homework (documented above)
 
+The End
+========
 
+Thank you!
