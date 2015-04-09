@@ -1,7 +1,7 @@
 import functional
 
 
-def test_lambdacall():
-    """test method morefun in the functional.py assignment"""
+def test_filterall():
+    """test method filterall in the functional.py assignment"""
 
     assert(functional.filterall() == ['val', 'val2'])
