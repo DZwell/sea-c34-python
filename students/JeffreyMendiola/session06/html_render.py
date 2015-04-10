@@ -70,7 +70,7 @@ class Head(Element):
 
 class OneLineTag(Element):
     def render(self, file_out, line=""):
-        file_out.write(line + "<" + self.tag_name + ">")
+        file_out.write(line + "<" + self.tag_name + self.attr + ">")
 
         for child in self.children:
             try:
@@ -105,3 +105,16 @@ class Hr(SelfClosingTag):
 
 class Br(SelfClosingTag):
     tag_name = "br"
+
+# =============================================================================
+# Step 6
+# =============================================================================
+
+
+class A(OneLineTag):
+    tag_name = "a"
+
+    def __init__(self, link, content, **kwargs):
+        self.link = link
+        self.content = content
+        Element.__init__(self, content=None, href=link, **kwargs)
