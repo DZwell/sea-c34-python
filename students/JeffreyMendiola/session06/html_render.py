@@ -1,5 +1,9 @@
 #!/usr/bin/env python
 
+# =============================================================================
+# Step 1
+# =============================================================================
+
 
 class Element(object):
     """
@@ -28,6 +32,10 @@ class Element(object):
 
         file_out.write(line + "</" + self.tag_name + ">\n")
 
+# =============================================================================
+# Step 2
+# =============================================================================
+
 
 class Html(Element):
     tag_name = "html"
@@ -44,3 +52,28 @@ class Body(Element):
 
 class P(Element):
     tag_name = "p"
+
+# =============================================================================
+# Step 3
+# =============================================================================
+
+
+class Head(Element):
+    tag_name = "head"
+
+
+class OneLineTag(Element):
+    def render(self, file_out, line=""):
+        file_out.write(line + "<" + self.tag_name + ">")
+
+        for child in self.children:
+            try:
+                child.render(file_out, line)
+            except AttributeError:
+                file_out.write(child)
+
+        file_out.write("</" + self.tag_name + ">\n")
+
+
+class Title(OneLineTag):
+    tag_name = "title"
