@@ -15,6 +15,9 @@ class Element(object):
     def __init__(self, content=None, **kwargs):
 
         self.attributes = kwargs
+        self.attr = ""
+        for attr_key, attr_val in self.attributes.items():
+            self.attr = " {key}=\"{val}\"".format(key=attr_key, val=attr_val)
 
         if content:
             self.children = [content]
@@ -25,10 +28,7 @@ class Element(object):
         self.children.append(string)
 
     def render(self, file_out, line=""):
-        file_out.write(line + "<" + self.tag_name + ">\n")
-        for attr_key, attr_val in self.attributes.items():
-            file_out.write(
-                " {key}=\"{value}\"".format(key=attr_key, value=attr_val))
+        file_out.write(line + "<" + self.tag_name + self.attr + ">\n")
 
         for child in self.children:
             try:
