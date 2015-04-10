@@ -12,7 +12,10 @@ class Element(object):
     tag_name = "html"
     indent = "    "
 
-    def __init__(self, content=None):
+    def __init__(self, content=None, **kwargs):
+
+        self.attributes = kwargs
+
         if content:
             self.children = [content]
         else:
@@ -23,6 +26,9 @@ class Element(object):
 
     def render(self, file_out, line=""):
         file_out.write(line + "<" + self.tag_name + ">\n")
+        for attr_key, attr_val in self.attributes.items():
+            file_out.write(
+                " {key}=\"{value}\"".format(key=attr_key, value=attr_val))
 
         for child in self.children:
             try:
