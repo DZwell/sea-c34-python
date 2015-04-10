@@ -83,3 +83,25 @@ class OneLineTag(Element):
 
 class Title(OneLineTag):
     tag_name = "title"
+
+# =============================================================================
+# Step 4
+# Edit Element to accept a set of attributes as keywords to the constructor
+# =============================================================================
+
+# =============================================================================
+# Step 5
+# =============================================================================
+
+
+class SelfClosingTag(Element):
+    def render(self, file_out, line=""):
+        file_out.write(line + "<" + self.tag_name + self.attr + " />\n")
+
+
+class Hr(SelfClosingTag):
+    tag_name = "hr"
+
+
+class Br(SelfClosingTag):
+    tag_name = "br"
