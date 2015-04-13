@@ -29,15 +29,3 @@ for y in new_cipher_text:
     decrypt_text += decrypt_char
 
 print decrypt_text
-
-
-
-
-
-
-
-
-
-
-
-
