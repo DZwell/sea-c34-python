@@ -17,7 +17,7 @@ class Element(object):
         self.attributes = kwargs
         self.attr = ""
         for attr_key, attr_val in self.attributes.items():
-            self.attr = " {key}=\"{val}\"".format(key=attr_key, val=attr_val)
+            self.attr += " {key}=\"{val}\"".format(key=attr_key, val=attr_val)
 
         if content:
             self.children = [content]
@@ -135,6 +135,14 @@ class Li(Element):
 class H(OneLineTag):
     tag_name = "h"
 
-    def __init__(self, h_size, content, **kwargs):
+    def __init__(self, h_size, content=None, **kwargs):
         self.tag_name = self.tag_name + str(h_size)
         Element.__init__(self, content, **kwargs)
+
+# =============================================================================
+# Step 8
+# =============================================================================
+
+
+class Meta(SelfClosingTag):
+    tag_name = "meta"
