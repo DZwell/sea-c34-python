@@ -17,4 +17,9 @@ elif (lang == "Vietnamese"):
 else:
     raise RuntimeError("This shouldn't happen!")
 
+<<<<<<< HEAD
+1++
+
+=======
+>>>>>>> 6d22b5c1ca727e30378ed07ffb7a9fc067aa46d3
 

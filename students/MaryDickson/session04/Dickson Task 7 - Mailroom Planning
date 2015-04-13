@@ -1,0 +1,83 @@
+Task 7
+
+Mail Room
+
+# The script should have a data structure that holds a list of your donors and a history of the amounts they have donated.
+donorlist = {Mary, 10; Josh, 100; Zuleika, 50; OC, 25} # dict
+
+action = raw_input(“Would you like to SEND a thank you note, CREATE a report, or QUIT?”)
+
+if action == QUIT:
+
+    exit()
+
+if action == SEND:
+
+    name = raw_input(“Please enter a full name, LIST options, or MENU to go back”)
+
+        if name == “MENU”:
+
+            go back to action prompt
+
+        if name == “LIST”:
+
+            print donorlist.keys #names
+
+            name = raw_input(“Please enter a name from the list, or type a new one to add”)
+
+        while name not in donorlist.keys:
+
+            ask if they want to add the name y/n
+
+                if y, add name to donorlist
+
+                if no, ask for name again
+
+        if name in donor list.keys:
+
+            name.value = int(raw_input(ask for donation amount))
+
+            while name.value is not an int,
+
+                ask for name.value again
+
+            add (name,value) to donorlist #how to add multiple donations to one user?
+
+    def createletter(name,value):
+
+        print “Dear %n, thank you for your generous donation of %v. We appreciate your support of our mission, which enables us to provide essential services to hundreds of Seattle families. Sincerely, do great inc.” %n name %v value
+
+    createletter(name,value)
+
+    name = MENU
+
+if action == create:
+
+    def createreport():
+
+        sort donorlist by donation amount
+
+        print donorlist.keys, sum(donorlist.values), count(donorlist.values) and average(donorlist.values)
+
+    # return to main menu
+
+    # action = raw_input(“Would you like to SEND a thank you note, CREATE a report, or QUIT?”)
+
+At any point, the user should be able to quit their current task and return to the original prompt.
+From the original prompt, the user should be able to quit the script cleanly
+—
+
+ Begin by thinking of each individual step as a stand-alone operation. What kind of function would you need to write to accomplish a single step from the above list of steps?
+
+Write a series of pseudocode functions to accomplish the tasks identified by the list of steps above.
+
+Continue by planning the flow of your script. What should happen first, second? How will you move from one step to the next?
+
+You may find that creating a flow chart that shows how you expect your script to work can help you to visualize this process.
+
+You can use a program to create a flow chart, or a free web service like draw.io. Or you can simply sketch something by hand.
+
+To submit this homework, attach a file containing your pseudocode functions and a screenshot of your flow chart to the submission page in canvas.
+
+We will discuss the implementation of this program in more detail during session 4, so make sure you think this through so you can participate in that discussion.
+

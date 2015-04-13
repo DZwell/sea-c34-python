@@ -1,0 +1,89 @@
+
+Task 8: Dictionaries and Sets
+# Create a dictionary containing “name”, “city”, and “cake” for “Chris” from “Seattle” who likes “Chocolate”.
+# Display the dictionary.
+#Delete the entry for “cake”.
+#Display the dictionary.
+#Add an entry for “fruit” with “Mango” and display the dictionary.
+#Display the dictionary keys.
+#Display the dictionary values.
+#Display whether or not “cake” is a key in the dictionary (i.e. False) (now).
+#Display whether or not “Mango” is a value in the dictionary.
+#Using the dict constructor and zip, build a dictionary of numbers from zero to fifteen and the hexadecimal equivalent (string is fine).
+Using the dictionary from item 1: Make a dictionary using the same keys but with the number of ‘a’s in each value.
+Create sets s2, s3 and s4 that contain numbers from zero through twenty, divisible 2, 3 and 4.
+Display the sets.
+Display if s3 is a subset of s2 (False)
+and if s4 is a subset of s2 (True).
+Create a set with the letters in ‘Python’ and add ‘i’ to the set.
+Create a frozenset with the letters in ‘marathon’
+display the union and intersection of the two sets.
+
+
+"""
+Text and files and dicts, and...
+
+Task 9: Exceptions
+
+Improving raw_input : - Create a new file: safe_input.py – add it to your repo,
+ and submit a pull
+
+request. Make sure to make frequent commits with good commit messages.
+
+The raw_input() function can generate two exceptions: - EOFError or end-of-file
+ (EOF) - KeyboardInterrupt or canceled input. - Create a wrapper function, perhaps safe_input() that returns ‘None’ rather
+
+than raising these exceptions.
+
+Note: - ^C causes a KeyboardInterrupt Error - ^D (^Z on Windows) causes an End
+Of File Error. - ^ is the Control character
+
+The next step should be done in your mailroom.py file: - Update your mailroom.py
+ program to use exceptions (and BAFP) to handle
+
+malformed numeric input (and other malformed input)
+
+Make sure to have your commit comment reflect that you’ve added this feature
+Task 10: Mailroom Madness
+
+Using all you’ve learned so far, complete your mailroom program according to the
+ pseudocode and flow chart you created last session.
+use dicts where appropriate
+see if you can use a dict to switch between the users selections
+Try to use a dict and the .format() method to do the letter as one big
+template – rather than building up a big string in parts.
+For extra fun, see if you can use a file to preserve the donation list and
+changes made to it while the program is running.
+Task 11: Investigate Session 5
+
+Read through the Session 05 slides.
+
+http://codefellows.github.io/sea-c34-python/session05.html
+
+There are three sections. For each one, come up with three questions each.
+
+Arguments (3 questions)
+Comprehensions (3 questions)
+Lambdas and Functional Programming (3 questions)
+Write some Python code to help you answer them, one function per question.
+
+For each function, write a good docstring describing what question you are
+trying to answer.
+
+Put the functions in four separate modules (files) called arguments.py,
+comprehensions.py, functional.py in the session05 subdirectory of your student directory.
+
+That is, you should have nine questions, and nine functions, total, spread out
+ across three files.
+
+Use everything you’ve learned so far as needed (including lists, tuples,
+    slicing, iteration, functions, booleans, printing, modules, assertions, dictionaries, sets, exceptions, file reading/writing, and paths).
+
+Create a branch in your local repo called task11 and switch to it (git
+    checkout task11).
+
+Add your files to that branch, commit and push, then submit a pull request to
+the main class repo.
+
+Finally, submit your assignment in Canvas by giving the URL of the pull request.
+"""
