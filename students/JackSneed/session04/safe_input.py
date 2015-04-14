@@ -5,4 +5,4 @@ def safe_input(key):
         input_error = None
     return input_error
 
-safe_input()
+safe_input(1)
