@@ -4,8 +4,7 @@ file: test_iteration.py
 ===============================================================================
 
 Description:
-     These are some test verifying that the fibonacci, lucas, and sum series
-     functions work properly.
+     This is a test verifying that the find_sum function works properly.
 ===============================================================================
 """
 
