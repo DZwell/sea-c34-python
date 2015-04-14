@@ -2,7 +2,6 @@
 
 list = [0, 1, 4, 8, 100, 1001]
 
-
 def printitem(list, num):
     """
     Can I throw a warning message if number not in range?
@@ -20,16 +19,11 @@ print printitem(list, 10)
 print list
 
 
-def make_name_error(name):
-    '''
-    say hello given a name (string)
-    '''
-    try:
-        print "Hello %s" % name
-    except NameError:
-        print "Oops, try that again with a string this time"
-    finally:
-        return "program finished"
-
-print make_name_error(Mary)  # name error
-print make_name_error("Mary")
+def add_donation(dict, name, amount)
+    if name in dict.keys:
+        try:
+            name.value = int(raw_input(ask for donation amount))
+        exception:
+            name.value = int(raw_input(ask for donation amount))
+        finally:
+            add (name,value) to donorlist
