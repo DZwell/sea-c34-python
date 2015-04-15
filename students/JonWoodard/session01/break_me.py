@@ -1,15 +1,62 @@
-#creating module with four errors
-#how to tell if she is a whitch?
-whitch="Burn her!"
-#resolve name error by defining *whitch*
-#she=whitch()  this creates a type error - str object not callable
-she=[]    #type error resolved
-#setattr(she, 'turned_me_into_a_newt', True)    resolve attribute error
-#list object has no attribute 'turned_me_into_a_newt'
-var1='turned_me_into_a_newt'
-she.append(var1)    #resolve syntax error
-print(she)
-if var1 in she:
-    print(whitch)
-else:
-    print('got better')
+"""
+Create a module with four functions.
+Each function will generate a built in error.
+Resolve the errors in each function.
+"""
+
+
+def is_a_witch(answer="yes"):
+    # How do we tell if she is a witch?
+    witch = "Burn her!"
+    answer = raw_input("Is she made of wood?\n-> ")
+    # if answer.lower[0] == 'y':
+    """
+    This gives a TypeError:
+    'builtin_function_or_method' object has no attribute '__getitem__'
+    """
+    if answer[0] == 'y':
+        print(witch)
+    else:
+        print("Not a witch")
+    """
+    This prints 'witch' if the first letter in the user input is 'y'.
+    It treats 'Y' as a 'no' answer.
+    """
+
+
+def witch_attributes():
+    she = []
+    # she.append "funny nose"
+    """This is a syntax error due to missing '()'."""
+    she.append("funny nose")
+    she.append("pointy hat")
+    she.append("turned me into a newt")
+    print(she)
+
+
+def made_of_wood():
+    # How do you know if she's made of wood?
+    # if 'Y' in raw_input(
+    #    "Does she weigh the same as a duck?\n[Y]es or [N]o\n-> "
+    #    ):
+    # weight.append("duck")
+    # if "duck" in weight:
+    #    print("She's a witch!")
+    """This gives a NameError: global name 'weight' is not defined."""
+    weight = []
+    if 'Y' in raw_input("Does she weigh the same as a duck?\n"
+                        "[Y]es or [N]o\n-> "):
+        weight.append("duck")
+    if "duck" in weight:
+        print("She's a witch!")
+
+
+def witch():
+    witch_dict = {1: "funny nose", 2: "pointy hat", 3: "warts", 4: "cat"}
+    witch_list = []
+    for key in witch_dict:
+        witch_list.append(witch_dict[key])
+    # for item in witch_list:
+    #    item.sort
+    """AttributeError: 'str' object has no attribute 'sort'"""
+    print(sorted(witch_list))
