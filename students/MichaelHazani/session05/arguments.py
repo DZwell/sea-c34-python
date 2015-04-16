@@ -17,11 +17,11 @@ dictionary = {1: u'A', 2: u'B', 3: u'C'}
 # result: dictionary is printed! Python is super flexible!
 
 
-def wrongarg():
-    """what if the format method gives the wrong kind of arg?"""
-    d = {u'First': u'A', u'Second': u'B', '3': u'C'}
-    print u"if this works you'll see valus from dict:"
-    print u"{First} {Second}".format(*d)
+# def wrongarg():
+#     """what if the format method gives the wrong kind of arg?"""
+#     d = {u'First': u'A', u'Second': u'B', '3': u'C'}
+#     print u"if this works you'll see valus from dict:"
+#     print u"{First} {Second}".format(*d)
 
-wrongarg()
+# wrongarg()
 # result: "KeyError: u'First'"" must have ** if you're passing kwarg!
